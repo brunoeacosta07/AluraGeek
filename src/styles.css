@@ -1,1 +1,150 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  min-height: 100vh;
+  background-color: #fdfdfd;
+  font-family: 'Lato', sans-serif;
+  color: #464646;
+}
+
+
+.alert-danger{
+  width: 600px;
+  max-width: 95%;
+  padding: 1rem 0;
+  margin: .8rem auto;
+  border: 1px solid rgb(255, 53, 53);
+  border-radius: 7px;
+  background-color: rgba(255, 43, 28, 0.5);
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 1rem;
+  color: #fdfdfd;
+}
+
+.is-invalid{
+  border-color: #ed4337;
+}
+
+.invalid-feedback{
+  padding: .3rem;
+  color: #ed4337;
+}
+
+.zona{
+  padding-bottom: 5rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width:fit-content;
+}
+
+.zona-title{
+  font-size: 2rem;
+  padding-bottom: 1.5rem;
+  padding-left: 1rem;
+}
+
+.card{
+  width: 240px;
+  height: 320px;
+  padding: 1rem;
+  box-shadow: -4px 4px 8px rgba(0, 0, 0, 0.3), 4px -4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 200ms ease-in;
+}
+
+.card:hover{
+  transform: scale(1.01);
+}
+
+.img-card--container{
+  width: 200px;
+  height: 200px;
+  align-self: center;
+}
+
+.img-card--container img{
+  width: 200px;
+  max-height: 200px;
+}
+
+.card-price{
+  font-weight: 600;
+  color: #154857;
+}
+
+.card-link{
+  font-size: 1rem;
+  text-decoration: none;
+  color: #33B0D6;
+  align-self: flex-end;
+}
+
+
+
+@media screen and (max-width: 720px) {
+  .zona{
+    gap: 15px;
+  }
+
+  .card{
+    width: 200px;
+    height: 280px;
+  }
+  
+  .img-card--container{
+    width: 180px;
+    height: 180px;
+    align-self: center;
+  }
+  
+  .img-card--container img{
+    width: 180px;
+    max-height: 180px;
+  }
+
+  .card-link,
+  .card-price,
+  .card-title{
+    font-size: .8rem;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .zona{
+    gap: 10px;
+  }
+
+  .card{
+    width: 170px;
+    height: 240px;
+  }
+
+  .img-card--container{
+    width: 150px;
+    height: 150px;
+    align-self: center;
+  }
+  
+  .img-card--container img{
+    width: 150px;
+    max-height: 150px;
+  }
+
+  .card-link,
+  .card-price,
+  .card-title{
+    font-size: .6rem;
+  }
+}
